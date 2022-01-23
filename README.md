@@ -1,4 +1,4 @@
-# Pyrogram and Telethon String Session Bot [@WarFadeStringGeneratorBot](https://t.me/WarFadeStringGeneratorBot)
+# Pyrogram & Telethon String Session Bot [@WarFadeStringGeneratorBot](https://t.me/WarFadeStringGeneratorBot)
 
 > A star ⭐ from you means a lot to us!
 
