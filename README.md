@@ -4,7 +4,10 @@
 
 <p align="center"><a href="https://www.github.com/WARFADE-BOSS/StringGeneratorBot"><img src="https://te.legra.ph/file/697beb530ecff4f9236ec.jpg" width="2000"></a></p>
 
-A Telegram Bot To Generate Pyrogram & Telethon String Session.
+<h6 align="center">
+<b>⭐ A Telegram Bot To Generate Pyrogram & Telethon String Session ⭐<b>
+</h6>
+
 
 <details>
 
