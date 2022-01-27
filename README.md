@@ -1,45 +1,49 @@
-# Pyrogram & Telethon String Session Bot [@WarFadeStringGeneratorBot](https://t.me/WarFadeStringGeneratorBot)
+# Pyrogram & Telethon String Session Bot 
 
-> A star ⭐ from you means a lot to us!
+>[Generate Strings Easily From Here](https://t.me/WarFadeStringGeneratorBot)
 
 <p align="center"><a href="https://www.github.com/WARFADE-BOSS/StringGeneratorBot"><img src="https://te.legra.ph/file/697beb530ecff4f9236ec.jpg" width="2000"></a></p>
 
-Telegram bot to generate pyrogram and telethon string session.
+A Telegram Bot To Generate Pyrogram & Telethon String Session.
 
-### Deploy to Heroku
+<details>
+
+<summary> • ✨ Deploy to Heroku ✨</summary>
+
+--------
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/WARFADE-BOSS/StringGeneratorBot)
 
-1. Tap on above button and fill `API_ID`, `API_HASH`, `BOT_TOKEN` (and `MUST_JOIN`).
-2. Then tap "Deploy App" below it. Wait till deploying is complete (will take atmost 2 minutes).
-3. After deploying is complete, tap on "Manage App"
-4. Check the logs to see if your bot is ready!
+--------
+</details>
 
-### Local Deploying
+<details><summary>• 💫 Local Deploying 💫</summary>
 
-1. Clone the repo
-   ```markdown
-   git clone https://github.com/WARFADE-BOSS/StringGeneratorBot
-   ```
-2. Get a DATABASE_URL. If you don't know how, deploy using Heroku Button only or delete database things as it's not a compulsion.
+--------
+
+1. Clone The Repo Using Command
+
+   `git clone https://github.com/WARFADE-BOSS/StringGeneratorBot`
    
-3. Edit `Config.py` and fill the needed variables
+2. Edit `Config.py` & Fill The Required Variables
 
-4. Enter the directory
-   ```markdown
-   cd StringGeneratorBot
-   ```
-5. Run the file
-   ```markdown
-   python3 generator.py
-   ```
+4. Enter The Directory
 
-## Environment Variables
+   `cd StringGeneratorBot`
 
-#### Mandatory Vars
+5. Run The File
 
-- `API_ID` - Get this from [my.telegram.org](https://my.telegram.org/auth)
-- `API_HASH` - Get this from [my.telegram.org](https://my.telegram.org/auth)
-- `BOT_TOKEN` - Get this from [@BotFather](https://t.me/BotFather)
-- `DATABASE_URL` - Will be automatically added by Heroku.
-- `MUST_JOIN` - Username/ID of your telegram channel/group.
+   `python3 generator.py`
+---------
+</details>
+
+<details><summary>• 🔰 Mandatory Vars 🔰</summary>
+
+---------
+- `API_ID` - Get This Value From [Here](https://my.telegram.org/auth)
+- `API_HASH` - Get This From [Here](https://my.telegram.org/auth)
+- `BOT_TOKEN` - Get This From [Here](https://t.me/BotFather)
+- `DATABASE_URL` - Will Be Automatically Added When Deploying On Heroku
+- `MUST_JOIN` - Username/ID of your Telegram Channel/Group (Not Compulsory).
+---------
+</details>
