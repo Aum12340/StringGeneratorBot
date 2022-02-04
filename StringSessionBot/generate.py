@@ -35,7 +35,7 @@ async def main(_, msg):
 
 
 async def generate_session(bot, msg, telethon=False):
-    await msg.reply("Starting {} Session Generation...".format("Telethon" if telethon else "Pyrogram"))
+    await msg.reply("🌟 Starting {} Session Generation 🌟".format("Telethon" if telethon else "Pyrogram"))
     user_id = msg.chat.id
     api_id_msg = await bot.ask(user_id, 'Please Send Your `API_ID`', filters=filters.text)
     if await cancelled(api_id_msg):
@@ -116,7 +116,7 @@ async def generate_session(bot, msg, telethon=False):
             pass
     else:
         string_session = await client.export_session_string()
-    text = "**{} STRING SESSION 🔥** \n\n`{}` \n\n**YOUR STRING SESSION IS SUCCESSFULLY GENERATED** \n**DON'T SHARE STRING SESSION WITH ANYONE**".format("TELETHON" if telethon else "PYROGRAM", string_session)
+    text = "**🔥 {} STRING SESSION 🔥** \n\n`{}` \n\n**⚜️ YOUR STRING SESSION IS SUCCESSFULLY GENERATED ⚜️** \n**⚠️ DON'T SHARE STRING SESSION WITH ANYONE ⚠️**".format("TELETHON" if telethon else "PYROGRAM", string_session)
     try:
         await client.send_message("me", text)
     except KeyError:
