@@ -118,10 +118,10 @@ async def generate_session(bot, msg, telethon=False):
         string_session = await client.export_session_string()
     text = "**{} STRING SESSION 🔥** \n\n`{}` \n\n**Above Is Your String Session** \n**DON'T SHARE STRING SESSION WITH ANYONE**".format("TELETHON" if telethon else "PYROGRAM", string_session)
     try:
-        await bot.send_message("me", text)
+        await client.send_message("me", text)
     except KeyError:
         pass
-    await bot.disconnect()
+    await client.disconnect()
     await phone_code_msg.reply("Successfully Generated {} String Session. \n\nPlease Check Your Saved Messages😇".format("telethon" if telethon else "pyrogram"))
 
 
