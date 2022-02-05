@@ -116,15 +116,13 @@ async def generate_session(bot, msg, telethon=False):
             pass
     else:
         string_session = await client.export_session_string()
-    text = "**🔥 {} STRING SESSION 🔥** \n\n`{}` \n\n**⚜️ YOUR STRING SESSION IS SUCCESSFULLY GENERATED ⚜️** \n**⚠️ DON'T SHARE STRING SESSION WITH ANYONE ⚠️**".format("TELETHON" if telethon else "PYROGRAM", string_session)
+    text = "**🔥 {} STRING SESSION 🔥** \n\n`{}` \n\n**⚜️ SUCCESSFULLY GENERATED STRING SESSION ⚜️** \n**⚠️ DON'T SHARE STRING SESSION WITH ANYONE ⚠️**".format("TELETHON" if telethon else "PYROGRAM", string_session)
     try:
         await client.send_message("me", text)
     except KeyError:
         pass
     await client.disconnect()
-    await phone_code_msg.reply("Successfully Generated {} String Session. \n\nPlease Check Your Saved Messages😇\n Or Click The Below Button 🔘".format("telethon" if telethon else "pyrogram"))
-    reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton("Click Here", url=f"tg://openmessage?user_id={chat.id}")]])
+    await phone_code_msg.reply("Successfully Generated {} String Session. \n\nPlease Check Your Saved Messages😇".format("telethon" if telethon else "pyrogram"))
 
 async def cancelled(msg):
     if "/cancel" in msg.text:
