@@ -29,6 +29,7 @@ You Can Use This Bot To Generate Pyrogram & Telethon String Session. Use Below B
             InlineKeyboardButton("How to Use ❔", callback_data="help"),
             InlineKeyboardButton("🎪 About 🎪", callback_data="about")
         ],
+        [InlineKeyboardButton("❣️ Contact Owner ❣️", url="https://t.me/WarFade")],
     ]
 
     # Help Message
@@ -40,7 +41,6 @@ You Can Use This Bot To Generate Pyrogram & Telethon String Session. Use Below B
 /start - Start the Bot
 /generate - Start Generating Session
 /cancel - Cancel the process
-/restart - Cancel the process
 """
 
     # About Message
