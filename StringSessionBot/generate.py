@@ -124,7 +124,7 @@ async def generate_session(bot, msg, telethon=False):
     await client.disconnect()
     await phone_code_msg.reply("Successfully Generated {} String Session. \n\nPlease Check Your Saved Messages😇\n Or Click The Below Button 🔘".format("telethon" if telethon else "pyrogram"))
     reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton("Click Here", url=f"tg://openmessage?user_id={m.chat.id}")]])
+            InlineKeyboardButton("Click Here", url=f"tg://openmessage?user_id={chat.id}")]])
 
 async def cancelled(msg):
     if "/cancel" in msg.text:
