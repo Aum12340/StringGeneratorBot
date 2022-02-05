@@ -26,7 +26,7 @@ from telethon.errors import (
 @Client.on_message(filters.private & ~filters.forwarded & filters.command('generate'))
 async def main(_, msg):
     await msg.reply(
-        "Please Choose Which Session You Want To Generate 😇",
+        "Please Choose Which String Session You Want To Generate 😇",
         reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton("Pyrogram", callback_data="pyrogram"),
             InlineKeyboardButton("Telethon", callback_data="telethon")
@@ -35,7 +35,7 @@ async def main(_, msg):
 
 
 async def generate_session(bot, msg, telethon=False):
-    await msg.reply("🌟 Starting {} Session Generation 🌟".format("Telethon" if telethon else "Pyrogram"))
+    await msg.reply("Starting {} Session Generation".format("Telethon" if telethon else "Pyrogram"))
     user_id = msg.chat.id
     api_id_msg = await bot.ask(user_id, 'Please Send Your `API_ID`', filters=filters.text)
     if await cancelled(api_id_msg):
@@ -122,8 +122,9 @@ async def generate_session(bot, msg, telethon=False):
     except KeyError:
         pass
     await client.disconnect()
-    await phone_code_msg.reply("Successfully Generated {} String Session. \n\nPlease Check Your Saved Messages😇".format("telethon" if telethon else "pyrogram"))
-
+    await phone_code_msg.reply("Successfully Generated {} String Session. \n\nPlease Check Your Saved Messages😇\n Or Click The Below Button 🔘".format("telethon" if telethon else "pyrogram"))
+    reply_markup=InlineKeyboardMarkup([[
+            InlineKeyboardButton("Click Here", url=f"tg://openmessage?user_id={m.chat.id}")]])
 
 async def cancelled(msg):
     if "/cancel" in msg.text:
