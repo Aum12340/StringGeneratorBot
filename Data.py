@@ -36,11 +36,11 @@ You Can Use This Bot To Generate Pyrogram & Telethon String Session. Use Below B
     HELP = """
 ✨ **Available Commands** ✨
 
-/about - About The Bot
-/help - This Message
-/start - Start the Bot
+/start - Start The Bot
+/help - Help Message
 /generate - Start Generating Session
-/cancel - Cancel the process
+/cancel - Cancel The Process
+/about - About Bot
 """
 
     # About Message
