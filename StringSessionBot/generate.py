@@ -68,7 +68,7 @@ async def generate_session(bot, msg, telethon=False):
         await msg.reply('`API_ID` and `API_HASH` Combination Is Invalid. Please Start Generating Session Again.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
     except (PhoneNumberInvalid, PhoneNumberInvalidError):
-        await msg.reply('**PHONE_NUMBER** Is Invalid. Please Start Generating Session Again.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
+        await msg.reply('`PHONE_NUMBER` Is Invalid. Please Start Generating Session Again.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
     try:
         phone_code_msg = await bot.ask(user_id, "Please Check For An OTP In Official Telegram Account. If You Got It, Send OTP Here After Reading The Below Format. \n\nIf OTP is **12345** \nPlease Send It As `1 2 3 4 5`.", filters=filters.text, timeout=600)
