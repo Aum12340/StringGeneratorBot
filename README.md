@@ -2,7 +2,7 @@
 
 >[Generate Strings Easily From Here](https://t.me/WarFadeStringGeneratorBot)
 
-<p align="center"><a href="https://www.github.com/WARFADE-BOSS/StringGeneratorBot"><img src="https://te.legra.ph/file/697beb530ecff4f9236ec.jpg" width="2000"></a></p>
+<p align="center"><a href="https://www.github.com/WARFADE-BOSS/StringGeneratorBot"><img src="https://telegra.ph/file/b9e06f615079484a2338b.jpg" width="2000"></a></p>
 
 <h6 align="center">
 <b>⭐ A Telegram Bot To Generate Pyrogram & Telethon String Session ⭐<b>
