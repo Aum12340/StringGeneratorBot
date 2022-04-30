@@ -1,6 +1,6 @@
 # Pyrogram & Telethon String Session Bot 
 
->[Generate Strings Easily From Here](https://t.me/WarFadeStringGeneratorBot)
+>[Generate Strings Easily From Here](https://telegram.me/WarFadeStringGeneratorBot)
 
 <p align="center"><a href="https://www.github.com/WARFADE-BOSS/StringGeneratorBot"><img src="https://telegra.ph/file/b9e06f615079484a2338b.jpg" width="2000"></a></p>
 
