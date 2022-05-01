@@ -14,17 +14,17 @@ You Can Use This Bot To Generate Pyrogram & Telethon String Session. Use Below B
 
     # Home Button
     home_buttons = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
+        [InlineKeyboardButton("💫 Start Generating Session 💫", callback_data="generate")],
         [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")]
     ]
 
     generate_button = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")]
+        [InlineKeyboardButton("💫 Start Generating Session 💫", callback_data="generate")]
     ]
 
     # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
+        [InlineKeyboardButton("💫 Start Generating Session 💫", callback_data="generate")],
         [
             InlineKeyboardButton("How to Use ❔", callback_data="help"),
             InlineKeyboardButton("🎪 About 🎪", callback_data="about")
@@ -38,7 +38,7 @@ You Can Use This Bot To Generate Pyrogram & Telethon String Session. Use Below B
 
 /start - Start The Bot
 /help - Help Message
-/generate - Start Generating Session
+/generate - Generate String Session
 /cancel - Cancel The Process
 /about - About Bot
 """
