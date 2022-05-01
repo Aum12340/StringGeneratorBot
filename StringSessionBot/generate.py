@@ -28,8 +28,8 @@ async def main(_, msg):
     await msg.reply(
         "Please Choose Which String Session You Want To Generate 😇",
         reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton("Pyrogram", callback_data="pyrogram"),
-            InlineKeyboardButton("Telethon", callback_data="telethon")
+            InlineKeyboardButton("Pyrogram - Used For MusicBot", callback_data="pyrogram"),
+            InlineKeyboardButton("Telethon - Used For Other Bots", callback_data="telethon")
         ]])
     )
 
