@@ -66,5 +66,5 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
 
 ERROR_MESSAGE = "Oops! An Exception Occurred! \n\n**Error** : {} " \
             "\n\nPlease Contact @WarFade or @WarFade_LimitedBot If This Message Doesn't Contain Any " \
-            "Sensitive Information And If You Want To Report This As " \
-            "Error Message Because This Error Is Not Being Logged By Us!"
+            "Sensitive Information And If You Want To Report This As" \
+            "Error Message \nThis Is Just An Error Message Which Is Not Logged In Our Database"
