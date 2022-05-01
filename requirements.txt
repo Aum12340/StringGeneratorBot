@@ -1,4 +1,4 @@
-git+https://github.com/pyrogram/pyrogram.git
+Pyrogram==1.4.16
 Telethon
 TgCrypto
 SQLAlchemy
