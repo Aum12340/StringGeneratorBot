@@ -71,7 +71,7 @@ async def generate_session(bot, msg, telethon=False):
         await msg.reply('`PHONE_NUMBER` Is Invalid. Please Start Generating Session Again.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
     try:
-        phone_code_msg = await bot.ask(user_id, "Please Check For An OTP In Official Telegram Account. If You Got It, Send OTP Here After Reading The Below Format. \n\nIf OTP is **12345** \nPlease Send It As `1 2 3 4 5`.", filters=filters.text, timeout=600)
+        phone_code_msg = await bot.ask(user_id, "Please Check For An OTP In Official Telegram Account. If You Got It, Send OTP Here After Reading The Below Format. \n\nIf OTP Is **12345** \nPlease Send It As `1 2 3 4 5`. \n\n__**(NOTE:- IF OTP IS NOT RECEIVED THEN GENERATE STRING AFTER 2-3 HOURS)**__", filters=filters.text, timeout=600)
         if await cancelled(api_id_msg):
             return
     except TimeoutError:
