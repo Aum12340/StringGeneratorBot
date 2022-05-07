@@ -125,7 +125,7 @@ async def generate_session(bot, msg, telethon=False):
     await client.disconnect()
     await phone_code_msg.reply("Successfully Generated {} String Session. \n\nPlease Check Your Saved Messages😇".format("**TELETHON**" if telethon else "**PYROGRAM**")),
     reply_markup = InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="String Session ↗️", url=f"tg://openmessage?user_id={chat.id}")]]
+            [[InlineKeyboardButton(text="String Session ↗️", url=f"tg://openmessage?user_id={chat_id}")]]
         )
 
 async def cancelled(msg):
